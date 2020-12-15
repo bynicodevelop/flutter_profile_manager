@@ -1,0 +1,34 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_inputs (0.0.1):
+    - Flutter
+  - flutter_profile_avatar (0.0.1):
+    - Flutter
+  - flutter_profile_manager (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_inputs (from `.symlinks/plugins/flutter_inputs/ios`)
+  - flutter_profile_avatar (from `.symlinks/plugins/flutter_profile_avatar/ios`)
+  - flutter_profile_manager (from `.symlinks/plugins/flutter_profile_manager/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_inputs:
+    :path: ".symlinks/plugins/flutter_inputs/ios"
+  flutter_profile_avatar:
+    :path: ".symlinks/plugins/flutter_profile_avatar/ios"
+  flutter_profile_manager:
+    :path: ".symlinks/plugins/flutter_profile_manager/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_inputs: f1e2ad9e795af05a2d51f4900f4590869e1b99fd
+  flutter_profile_avatar: 1714e712a6b99db33006d7bb3a74db929f1bfab1
+  flutter_profile_manager: f34302946b34583fda442cde5204242ecd0dcee7
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.9.3
