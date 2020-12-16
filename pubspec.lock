@@ -93,9 +93,9 @@ packages:
   flutter_profile_avatar:
     dependency: "direct main"
     description:
-      path: "../flutter_profile_avatar"
-      relative: true
-    source: path
+      name: flutter_profile_avatar
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.2"
   flutter_spinkit:
     dependency: transitive

@@ -1,33 +1,51 @@
 PODS:
+  - camera (0.0.1):
+    - Flutter
   - Flutter (1.0.0)
   - flutter_inputs (0.0.1):
+    - Flutter
+  - flutter_mobile_camera (0.0.1):
     - Flutter
   - flutter_profile_avatar (0.0.1):
     - Flutter
   - flutter_profile_manager (0.0.1):
     - Flutter
+  - path_provider (0.0.1):
+    - Flutter
 
 DEPENDENCIES:
+  - camera (from `.symlinks/plugins/camera/ios`)
   - Flutter (from `Flutter`)
   - flutter_inputs (from `.symlinks/plugins/flutter_inputs/ios`)
+  - flutter_mobile_camera (from `.symlinks/plugins/flutter_mobile_camera/ios`)
   - flutter_profile_avatar (from `.symlinks/plugins/flutter_profile_avatar/ios`)
   - flutter_profile_manager (from `.symlinks/plugins/flutter_profile_manager/ios`)
+  - path_provider (from `.symlinks/plugins/path_provider/ios`)
 
 EXTERNAL SOURCES:
+  camera:
+    :path: ".symlinks/plugins/camera/ios"
   Flutter:
     :path: Flutter
   flutter_inputs:
     :path: ".symlinks/plugins/flutter_inputs/ios"
+  flutter_mobile_camera:
+    :path: ".symlinks/plugins/flutter_mobile_camera/ios"
   flutter_profile_avatar:
     :path: ".symlinks/plugins/flutter_profile_avatar/ios"
   flutter_profile_manager:
     :path: ".symlinks/plugins/flutter_profile_manager/ios"
+  path_provider:
+    :path: ".symlinks/plugins/path_provider/ios"
 
 SPEC CHECKSUMS:
+  camera: a0ca5080336f7af47b88436e5e26da3dee5568f0
   Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
   flutter_inputs: f1e2ad9e795af05a2d51f4900f4590869e1b99fd
+  flutter_mobile_camera: 133e384346d13417238d632b9ba341a733f4c4c7
   flutter_profile_avatar: 1714e712a6b99db33006d7bb3a74db929f1bfab1
   flutter_profile_manager: f34302946b34583fda442cde5204242ecd0dcee7
+  path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
 
 PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
 

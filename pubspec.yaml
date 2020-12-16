@@ -10,8 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_profile_avatar:
-    path: "../flutter_profile_avatar"
+  flutter_profile_avatar: ^0.0.2
   flutter_inputs: ^0.0.1
 
 dev_dependencies:
