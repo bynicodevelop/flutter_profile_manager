@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_profile_manager/flutter_profile_manager.dart';
 import 'package:flutter_profile_manager/models/Field.dart';
 import 'package:flutter_profile_manager/enums/TypeField.dart';
+import 'package:flutter_mobile_camera/CameraBuilder.dart';
 
 void main() {
   runApp(MyApp());
@@ -62,19 +63,25 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Plugin example app'),
-        ),
-        body: ProfileManager(
-          onCancled: (FieldModel fieldMode) => null,
-          onUpdated: (dynamic value, FieldModel fieldModel) {
-            _map[fieldModel.id].updateValue = value;
+    return CameraBuilder(
+      child: MaterialApp(
+        home: Scaffold(
+          appBar: AppBar(
+            title: const Text('Plugin example app'),
+          ),
+          body: ProfileManager(
+            onCancled: (FieldModel fieldMode) => null,
+            onUpdated: (dynamic value, FieldModel fieldModel) {
+              if (fieldModel.id != 'avatarURL') {
+                _map[fieldModel.id].updateValue = value;
+              } else {
+                // Convert path to URL
+              }
 
-            setState(() => print('refresh view...'));
-          },
-          fields: _map.values.toList(),
+              setState(() => print('refresh view...'));
+            },
+            fields: _map.values.toList(),
+          ),
         ),
       ),
     );

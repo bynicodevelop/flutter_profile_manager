@@ -68,22 +68,11 @@ class _ProfileManagerState extends State<ProfileManager> {
                 vertical: 20.0,
               ),
               color: Theme.of(context).primaryColor,
-              child: Container(
-                decoration: BoxDecoration(
-                  shape: BoxShape.circle,
-                  boxShadow: [
-                    BoxShadow(
-                      blurRadius: 3,
-                      color: Colors.grey[700],
-                      offset: Offset(0, 2),
-                    )
-                  ],
-                ),
-                child: ProfileAvatar(
-                  size: 70,
-                  username: e.defaultValue,
-                  avatarURL: e.value,
-                ),
+              child: ProfileAvatar(
+                size: 70.0,
+                username: e.defaultValue,
+                avatarURL: e.value,
+                onUpdated: (value) => widget.onUpdated(value, e),
               ),
             ),
           );
