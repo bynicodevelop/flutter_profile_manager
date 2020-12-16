@@ -1,3 +1,7 @@
+## 0.0.1+3
+
+- Deleting an unused model
+
 ## 0.0.1+2
 
 - Updated avatar dependence
