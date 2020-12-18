@@ -72,7 +72,11 @@ class _ProfileManagerState extends State<ProfileManager> {
                 size: 70.0,
                 username: e.defaultValue,
                 avatarURL: e.value,
-                onUpdated: (value) => widget.onUpdated(value, e),
+                onUpdated: (value) async {
+                  await widget.onUpdated(value, e);
+
+                  Navigator.pop(context);
+                },
               ),
             ),
           );
