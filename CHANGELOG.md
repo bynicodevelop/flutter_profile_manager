@@ -1,5 +1,9 @@
 ## 0.0.1+4
 
+- Fixed UI Bug - Button not display
+
+## 0.0.1+4
+
 - Adding a rollback after taking a photo
 
 ## 0.0.1+3
