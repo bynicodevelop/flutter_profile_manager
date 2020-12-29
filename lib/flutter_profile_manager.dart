@@ -31,25 +31,21 @@ class _ProfileManagerState extends State<ProfileManager> {
           if (e.type != TypeField.AVATAR) {
             return ItemField(
               onTap: () => showModalBottomSheet(
+                isScrollControlled: true,
                 context: context,
                 builder: (BuildContext context) {
-                  return Padding(
-                    padding: const EdgeInsets.only(
-                      bottom: 10.0,
-                    ),
-                    child: ModalForm(
-                      fieldModel: e,
-                      onUpdated: (value, fieldModel) {
-                        widget.onUpdated(value, fieldModel);
+                  return ModalForm(
+                    fieldModel: e,
+                    onUpdated: (value, fieldModel) {
+                      widget.onUpdated(value, fieldModel);
 
-                        Navigator.pop(context);
-                      },
-                      onCancled: (fieldModel) {
-                        widget.onCancled(fieldModel);
+                      Navigator.pop(context);
+                    },
+                    onCancled: (fieldModel) {
+                      widget.onCancled(fieldModel);
 
-                        Navigator.pop(context);
-                      },
-                    ),
+                      Navigator.pop(context);
+                    },
                   );
                 },
               ),
