@@ -89,14 +89,14 @@ packages:
       name: flutter_mobile_camera
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.2"
+    version: "0.0.2+2"
   flutter_profile_avatar:
     dependency: "direct main"
     description:
       name: flutter_profile_avatar
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "0.0.2+1"
+    version: "0.0.2+2"
   flutter_spinkit:
     dependency: transitive
     description:

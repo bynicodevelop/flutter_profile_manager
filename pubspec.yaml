@@ -1,6 +1,6 @@
 name: flutter_profile_manager
 description: Create a profile form with updated data.
-version: 0.0.1+6
+version: 0.0.1+7
 homepage: https://github.com/bynicodevelop/flutter_profile_manager
 
 environment:
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_profile_avatar: ^0.0.2+1
+  flutter_profile_avatar: ^0.0.2+2
   flutter_inputs: ^0.0.1
 
 dev_dependencies:

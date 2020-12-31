@@ -1,3 +1,7 @@
+## 0.0.1+7
+
+- Updated the version of flutter_profile_avatar
+
 ## 0.0.1+6
 
 - Updated labels
