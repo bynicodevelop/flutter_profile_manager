@@ -63,25 +63,23 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return CameraBuilder(
-      child: MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: const Text('Plugin example app'),
-          ),
-          body: ProfileManager(
-            onCancled: (FieldModel fieldMode) => null,
-            onUpdated: (dynamic value, FieldModel fieldModel) {
-              if (fieldModel.id != 'avatarURL') {
-                _map[fieldModel.id].updateValue = value;
-              } else {
-                // Convert path to URL
-              }
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Plugin example app'),
+        ),
+        body: ProfileManager(
+          onCancled: (FieldModel fieldMode) => null,
+          onUpdated: (dynamic value, FieldModel fieldModel) {
+            if (fieldModel.id != 'avatarURL') {
+              _map[fieldModel.id].updateValue = value;
+            } else {
+              // Convert path to URL
+            }
 
-              setState(() => print('refresh view...'));
-            },
-            fields: _map.values.toList(),
-          ),
+            setState(() => print('refresh view...'));
+          },
+          fields: _map.values.toList(),
         ),
       ),
     );
