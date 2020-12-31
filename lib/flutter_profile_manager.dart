@@ -11,11 +11,18 @@ class ProfileManager extends StatefulWidget {
 
   final List<FieldModel> fields;
 
+  final String submitLabel;
+  final String cancelLabel;
+  final String defaultContentLabel;
+
   const ProfileManager({
     Key key,
     this.fields = const [],
     this.onUpdated,
     this.onCancled,
+    this.cancelLabel = 'Cancel',
+    this.submitLabel = 'Submit',
+    this.defaultContentLabel = 'Enter a content',
   }) : super(key: key);
 
   @override
@@ -35,6 +42,9 @@ class _ProfileManagerState extends State<ProfileManager> {
                 context: context,
                 builder: (BuildContext context) {
                   return ModalForm(
+                    submitLabel: widget.submitLabel,
+                    cancelLabel: widget.cancelLabel,
+                    defaultContentLabel: widget.defaultContentLabel,
                     fieldModel: e,
                     onUpdated: (value, fieldModel) {
                       widget.onUpdated(value, fieldModel);

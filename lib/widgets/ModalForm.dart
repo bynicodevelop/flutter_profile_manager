@@ -12,6 +12,7 @@ class ModalForm extends StatefulWidget {
 
   final String submitLabel;
   final String cancelLabel;
+  final String defaultContentLabel;
 
   ModalForm({
     Key key,
@@ -20,6 +21,7 @@ class ModalForm extends StatefulWidget {
     this.onCancled,
     this.submitLabel = 'Submit',
     this.cancelLabel = 'Cancel',
+    this.defaultContentLabel = 'Enter a content',
   }) : super(key: key);
 
   @override
@@ -41,14 +43,16 @@ class _ModalFormState extends State<ModalForm> {
 
       _input = TextInput(
         controller: _controller,
-        placeholder: widget.fieldModel.fieldPlaceholder ?? 'Enter a content',
+        placeholder:
+            widget.fieldModel.fieldPlaceholder ?? widget.defaultContentLabel,
         onChanged: (value) {}, // TODO: Remove when the package is updated
       );
 
       if (widget.fieldModel.type == TypeField.EMAIL) {
         _input = EmailInput(
           controller: _controller,
-          placeholder: widget.fieldModel.fieldPlaceholder ?? 'Enter a content',
+          placeholder:
+              widget.fieldModel.fieldPlaceholder ?? widget.defaultContentLabel,
         );
       }
     });

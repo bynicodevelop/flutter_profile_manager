@@ -1,3 +1,7 @@
+## 0.0.1+6
+
+- Updated labels
+
 ## 0.0.1+4
 
 - Fixed UI Bug - Button not display
